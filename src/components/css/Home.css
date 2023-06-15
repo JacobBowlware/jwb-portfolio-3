@@ -84,3 +84,17 @@
         padding: 59px 0;
     }
 }
+
+/* About Me */
+.about__header {
+    font-size: 32px;
+}
+
+.about__text {
+    text-align: center;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+}

@@ -13,7 +13,7 @@ const Header = () => {
         <div className="web-container">
             <nav className="navbar navbar-expand-sm">
                 <div className="nav-icons__container">
-                    <a className="nav-item nav-link nav-link__main" href="/">
+                    <a className="nav-item nav-link nav-link__main" href="/#hero">
                         <FontAwesomeIcon icon={faUser} />
                     </a>
                     <div>
