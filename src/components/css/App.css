@@ -1,5 +1,97 @@
 :root {
-  --var-background: #1c1c1c;
-  --var-text: #fff;
+  --var-background: #fbfbfd;
+  --var-background-alt: #f5f5f7;
+  --var-background-dark: #000;
+  --var-text-dark: #1d1d1f;
+  --var-text-light: #f5f5f7;
+  --var-text-alt: #86868b;
   --var-light: #DADDD8;
+}
+
+body {
+  background: var(--var-background);
+  color: var(--var-text-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+/* Containers */
+.web-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.web-container__dark {
+  background: var(--var-background-dark);
+  color: var(--var-text-light);
+}
+
+.container {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: none !important;
+}
+
+.container-light-bg {
+  background: var(--var-background-alt);
+}
+
+/* Typography */
+.header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+
+.subheader {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: .8rem;
+}
+
+.text-light {
+  color: var(--var-text-light) !important;
+}
+
+.text-dark {
+  color: var(--var-text-dark) !important;
+}
+
+/* Links */
+.link {
+  color: #06c;
+}
+
+/* Buttons */
+.btn {
+  background: var(--var-background-alt);
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--var-text-dark);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
 }

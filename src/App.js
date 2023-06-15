@@ -1,16 +1,20 @@
+// React
 import {
   createBrowserRouter, createRoutesFromElements,
   RouterProvider, Route, Outlet
 } from 'react-router-dom'
 
-import './App.css';
+// Pages
+import Home from './components/pages/Home';
+
+// CSS
+import './components/css/App.css';
+import './components/css/Home.css';
 
 function App() {
   const Root = () => {
     return <>
-      <div className="web-container">
-        <Outlet />
-      </div>
+      <Outlet />
     </>
   }
 
