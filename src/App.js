@@ -7,13 +7,20 @@ import {
 // Pages
 import Home from './components/pages/Home';
 
+// Components
+import Header from './components/common/Header';
+import SubHeader from './components/common/SubHeader';
+
 // CSS
 import './components/css/App.css';
 import './components/css/Home.css';
+import './components/css/Header.css';
 
 function App() {
   const Root = () => {
     return <>
+      <Header />
+      <SubHeader />
       <Outlet />
     </>
   }

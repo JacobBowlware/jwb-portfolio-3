@@ -8,7 +8,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
     return (
         <div className="web-container web-container-light">
-            <div className="container container-light-bg">
+            <div className="container container-light-bg hero-container">
                 <h1 className="header text-dark hero__header">Jacob Bowlware</h1>
                 <h2 className="subheader text-dark hero__subheader">Web Developer. CS Student. Rock Climbing Enthusiast.</h2>
                 <div className="hero__links">
