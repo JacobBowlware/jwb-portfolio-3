@@ -196,8 +196,8 @@ const Home = () => {
                         system is handled with the Stripe API and custom API end-points."
                         icons={[faHtml5, faCss3, faJsSquare, faReact]}
                         image={mindMazeSS}
-                        liveLink="https://lovelyicon.com"
-                        repoLink="https://github.com/JacobBowlware/LovelyIcon"
+                        liveLink="/"
+                        repoLink="https://github.com/JacobBowlware/MindMaze"
                     />
                     <ProjectItem
                         title="GroupBot" body="Created during Hacklahoma of 2023, Group Bot 

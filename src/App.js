@@ -10,11 +10,13 @@ import Home from './components/pages/Home';
 // Components
 import Header from './components/common/Header';
 import SubHeader from './components/common/SubHeader';
+import Footer from './components/common/Footer';
 
 // CSS
 import './components/css/App.css';
 import './components/css/Home.css';
 import './components/css/Header.css';
+import './components/css/Footer.css';
 
 function App() {
   const Root = () => {
@@ -22,6 +24,7 @@ function App() {
       <Header />
       <SubHeader />
       <Outlet />
+      <Footer />
     </>
   }
 

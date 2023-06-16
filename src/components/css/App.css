@@ -179,6 +179,14 @@ body {
   color: #06c !important;
 }
 
+#about,
+#skills,
+#projects,
+#contact,
+#hero {
+  scroll-margin-top: 100px;
+}
+
 /* Buttons */
 .btn {
   background: var(--var-background-alt);

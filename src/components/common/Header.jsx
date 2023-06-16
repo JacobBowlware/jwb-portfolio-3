@@ -39,7 +39,7 @@ const Header = () => {
                         <a className="nav-item nav-link" href="/#about">About</a>
                         <a className="nav-item nav-link" href="/#skills">Skills</a>
                         <a className="nav-item nav-link" href="/#projects">Projects</a>
-                        <a className="nav-item nav-link" href="/#contact">Contact</a>
+                        <a className="nav-item nav-link" href="/#links">Links</a>
                         <a className="nav-item nav-link nav-icon" href="https://github.com/JacobBowlware" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
