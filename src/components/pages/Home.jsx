@@ -129,9 +129,10 @@ const Home = () => {
                                 for new opportunities to learn and grow as a developer.
                             </p>
                             <p className="text-med about__text p-text">
-                                In my free time, I enjoy rock climbing, playing
-                                basketball, reading, and playing chess. I am always
-                                up for a challenge and I love to learn new things.
+                                In my free time, I enjoy rock climbing, reading, and playing chess. I am always
+                                up for a challenge and I love to learn new things. Currently I am seeking a Web Development
+                                position or internship; if you are interested in working with me, feel free to reach out!
+
                             </p>
                         </div>
                     </div>
@@ -184,6 +185,8 @@ const Home = () => {
                         cloud functions."
                         icons={[faJsSquare, faReact, faFire, faStripe]}
                         image={lovelyIconSS}
+                        liveLink="https://lovelyicon.com"
+                        repoLink="https://github.com/JacobBowlware/LovelyIcon"
                     />
                     <ProjectItem
                         title="Mind Maze" body="Mind Maze is a web application that allows 
@@ -193,6 +196,8 @@ const Home = () => {
                         system is handled with the Stripe API and custom API end-points."
                         icons={[faHtml5, faCss3, faJsSquare, faReact]}
                         image={mindMazeSS}
+                        liveLink="https://lovelyicon.com"
+                        repoLink="https://github.com/JacobBowlware/LovelyIcon"
                     />
                     <ProjectItem
                         title="GroupBot" body="Created during Hacklahoma of 2023, Group Bot 
@@ -202,6 +207,8 @@ const Home = () => {
                         API's, while also getting the chance to sharpen my front-end skills."
                         icons={[faHtml5, faCss3, faJsSquare, faReact, faDiscord]}
                         image={groupBotSS}
+                        liveLink="https://group-bot-a78f2.web.app/"
+                        repoLink="https://github.com/JacobBowlware/groupbot"
                     />
                 </div>
             </div>
