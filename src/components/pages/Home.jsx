@@ -4,10 +4,14 @@ import React, { useState } from 'react';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
+import { faBootstrap, faCss3, faDiscord, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
 
 // Images
 import manSitting from '../assets/man-sitting.svg';
-import { faBootstrap, faCss3, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import ProjectItem from '../common/ProjectItem';
+import lovelyIconSS from '../assets/LovelyIconSS.png';
+import groupBotSS from '../assets/GroupBotSS.png';
+import mindMazeSS from '../assets/MindMazeSS.png';
 
 const skills = [
     {
@@ -100,7 +104,7 @@ const Home = () => {
 
     return (
         <div className="web-container web-container-light">
-            <div className="container container-light-bg hero-container" id="hero">
+            <div className="container container-light-bg padding-container" id="hero">
                 <h1 className="header text-dark hero__header">Jacob Bowlware</h1>
                 <h2 className="subheader text-dark hero__subheader">Web Developer. CS Student. Rock Climbing Enthusiast.</h2>
                 <div className="hero__links">
@@ -114,29 +118,31 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="container container-grid container-light-bg" id="about">
-                <div className="grid__item-container">
-                    <div className="container-grid__item">
-                        <h2 className="subheader text-dark about__header">About Me</h2>
-                        <p className="text-med about__text p-text">
-                            Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma. I am
-                            passionate about programming and am always looking
-                            for new opportunities to learn and grow as a developer.
-                        </p>
-                        <p className="text-med about__text p-text">
-                            In my free time, I enjoy rock climbing, playing
-                            basketball, reading, and playing chess. I am always
-                            up for a challenge and I love to learn new things.
-                        </p>
+            <div className="container container-light-bg container-grid__item">
+                <div className="container-grid" id="about">
+                    <div className="grid__item-container">
+                        <div className="container-grid__item">
+                            <h2 className="subheader text-dark about__header">About Me</h2>
+                            <p className="text-med about__text p-text">
+                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma. I am
+                                passionate about programming and am always looking
+                                for new opportunities to learn and grow as a developer.
+                            </p>
+                            <p className="text-med about__text p-text">
+                                In my free time, I enjoy rock climbing, playing
+                                basketball, reading, and playing chess. I am always
+                                up for a challenge and I love to learn new things.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="grid__item-container">
-                    <div className="container-grid__item">
-                        <img className="about-img" alt="" src={manSitting} />
+                    <div className="grid__item-container">
+                        <div className="container-grid__item">
+                            <img className="about-img" alt="" src={manSitting} />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="container container-dark-bg" id="skills">
+            <div className="container container-dark-bg padding-container" id="skills">
                 <h3 className="subheader text-light skills-header">
                     My Skills
                 </h3>
@@ -162,6 +168,41 @@ const Home = () => {
                             );
                         })
                     }
+                </div>
+            </div>
+            <div className="container container-light-bg padding-container" id="projects">
+                <h3 className="subheader text-dark projects-header">
+                    My Projects
+                </h3>
+                <div className="projects-item__container">
+                    <ProjectItem
+                        title="LovelyIcon" body="LovelyIcon is a web application 
+                        that allows users to create an account, purchase credits, and 
+                        effortlessly generate icons. The icons are generated using the 
+                        OpenAI text-to-image API, and are then stored in a Firebase storage 
+                        bucket. The payment system is handled with the Stripe API and custom 
+                        cloud functions."
+                        icons={[faJsSquare, faReact, faFire, faStripe]}
+                        image={lovelyIconSS}
+                    />
+                    <ProjectItem
+                        title="Mind Maze" body="Mind Maze is a web application that allows 
+                        users to create an account, play a game of trivia, and view their 
+                        scores. The trivia questions are generated from the OpenAI text 
+                        generation API, and are then stored in a MongoDB database. The payment 
+                        system is handled with the Stripe API and custom API end-points."
+                        icons={[faHtml5, faCss3, faJsSquare, faReact]}
+                        image={mindMazeSS}
+                    />
+                    <ProjectItem
+                        title="GroupBot" body="Created during Hacklahoma of 2023, Group Bot 
+                        is a Discord bot that allows users to seemlessly create and manage sub-groups 
+                        within a Discord server. During this project, I gained valuable insights 
+                        into the Discord developer API and the process of developing user-friendly 
+                        API's, while also getting the chance to sharpen my front-end skills."
+                        icons={[faHtml5, faCss3, faJsSquare, faReact, faDiscord]}
+                        image={groupBotSS}
+                    />
                 </div>
             </div>
         </div>
