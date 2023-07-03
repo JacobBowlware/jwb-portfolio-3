@@ -25,11 +25,11 @@ const ProjectItem = ({ title, body, icons, liveLink, repoLink, image }) => {
                     </div>
                     <div className="projects-item__links">
                         <div className="hero__links-item">
-                            <a href={liveLink} className="link hero__link">View Live</a>
+                            <a href={liveLink} className="link hero__link" target="_blank" rel="noreferrer">View Live</a>
                             <FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} />
                         </div>
                         <div className="hero__links-item">
-                            <a href={repoLink} className="link hero__link">View Repository</a>
+                            <a href={repoLink} className="link hero__link" target="_blank" rel="noreferrer">View Repository</a>
                             <FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} />
                         </div>
                     </div>
