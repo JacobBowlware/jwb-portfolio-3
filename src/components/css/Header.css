@@ -3,6 +3,10 @@
     padding: 0.5rem 1rem;
 }
 
+.nav-toggler-icon {
+    color: var(--var-background-dark);
+}
+
 .nav-icon {
     display: none;
 }

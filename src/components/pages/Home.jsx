@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faCode, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
 import { faBootstrap, faCss3, faDiscord, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
 
 // Images
@@ -12,6 +12,7 @@ import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
 import groupBotSS from '../assets/GroupBotSS.png';
 import mindMazeSS from '../assets/MindMazeSS.png';
+import efficientDevSS from '../assets/EfficientDevSS.png';
 
 const skills = [
     {
@@ -30,11 +31,11 @@ const skills = [
                 icon: faJsSquare
             },
             {
-                name: 'ReactJS',
-                icon: faReact
+                name: 'TypeScript',
+                icon: faCode
             },
             {
-                name: 'React Native',
+                name: 'ReactJS',
                 icon: faReact
             },
             {
@@ -106,7 +107,7 @@ const Home = () => {
         <div className="web-container web-container-light">
             <div className="container container-light-bg padding-container" id="hero">
                 <h1 className="header text-dark hero__header">Jacob Bowlware</h1>
-                <h2 className="subheader text-dark hero__subheader">Web Developer. CS Student. Rock Climbing Enthusiast.</h2>
+                <h2 className="subheader text-med hero__subheader">Web Developer. CS Student. Rock Climbing Enthusiast.</h2>
                 <div className="hero__links">
                     <div className="hero__links-item">
                         <a href="/#skills" className="link hero__link">Skills</a>
@@ -183,21 +184,20 @@ const Home = () => {
                         OpenAI text-to-image API, and are then stored in a Firebase storage 
                         bucket. The payment system is handled with the Stripe API and custom 
                         cloud functions."
-                        icons={[faJsSquare, faReact, faFire, faStripe]}
+                        icons={[faHtml5, faCss3, faJsSquare, faReact, faFire, faStripe]}
                         image={lovelyIconSS}
                         liveLink="https://lovelyicon.com"
                         repoLink="https://github.com/JacobBowlware/LovelyIcon"
                     />
                     <ProjectItem
-                        title="Mind Maze" body="Mind Maze is a web application that allows 
-                        users to create an account, play a game of trivia, and view their 
-                        scores. The trivia questions are generated from the OpenAI text 
-                        generation API, and are then stored in a MongoDB database. The payment 
-                        system is handled with the Stripe API and custom API end-points."
-                        icons={[faHtml5, faCss3, faJsSquare, faReact]}
-                        image={mindMazeSS}
-                        liveLink="/"
-                        repoLink="https://github.com/JacobBowlware/MindMaze"
+                        title="EfficientDev" body="EfficientDev is  my own personal blog website 
+                        where I post about different topics in programming and productivity management. This project 
+                        was a great opportunity for me to learn more about TypeScript, while also getting the chance to
+                        to create blog posts about topics that I am passionate about."
+                        icons={[faHtml5, faCss3, faJsSquare, faCode, faReact]}
+                        image={efficientDevSS}
+                        liveLink="https://efficient-dev.web.app/"
+                        repoLink="https://github.com/JacobBowlware/EfficientDev"
                     />
                     <ProjectItem
                         title="GroupBot" body="Created during Hacklahoma of 2023, Group Bot 
