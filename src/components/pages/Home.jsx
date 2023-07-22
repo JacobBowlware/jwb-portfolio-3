@@ -107,7 +107,7 @@ const Home = () => {
         <div className="web-container web-container-light">
             <div className="container container-light-bg padding-container" id="hero">
                 <h1 className="header text-dark hero__header">Jacob Bowlware</h1>
-                <h2 className="subheader text-med hero__subheader">Web Developer. CS Student. Rock Climbing Enthusiast.</h2>
+                <h2 className="subheader text-med hero__subheader">Web Developer. CS Student. Basketball Enthusiast</h2>
                 <div className="hero__links">
                     <div className="hero__links-item">
                         <a href="/#skills" className="link hero__link">Skills</a>
@@ -125,14 +125,14 @@ const Home = () => {
                         <div className="container-grid__item">
                             <h2 className="subheader text-dark about__header">About Me</h2>
                             <p className="text-med about__text p-text">
-                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma. I am
-                                passionate about programming and am always looking
-                                for new opportunities to learn and grow as a developer.
+                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma.
+                                I have a strong passion for programming and am always looking
+                                for new opportunities to learn and grow professionally.
                             </p>
                             <p className="text-med about__text p-text">
-                                In my free time, I enjoy rock climbing, reading, and playing chess. I am always
-                                up for a challenge and I love to learn new things. Currently I am seeking a Web Development
-                                position or internship; if you are interested in working with me, feel free to reach out!
+                                In my free time I enjoy reading, programming, and playing basketball. I am always
+                                up for a challenge and I love to learn new things - whether it's a new programming language,
+                                productivity hack, or basketball move.
 
                             </p>
                         </div>
