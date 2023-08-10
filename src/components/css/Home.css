@@ -132,13 +132,15 @@
     padding: 0 0 .3rem 0;
     border-bottom: 1px solid #d2d2d7;
     font-weight: 400;
+    width: 7rem;
+    text-align: center;
 }
 
 .skills-selection-container__item:hover {
     opacity: 0.9;
 }
 
-.skills-selection-container__item:nth-last-of-type(3) {
+/* .skills-selection-container__item:nth-last-of-type(3) {
     padding-right: 15px;
 }
 
@@ -149,7 +151,7 @@
 
 .skills-selection-container__item:nth-last-of-type(1) {
     padding-left: 15px;
-}
+} */
 
 .skills-selection-container__icon {
     font-size: .7rem;

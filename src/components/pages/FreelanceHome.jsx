@@ -1,96 +1,26 @@
 // React
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faCode, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
-import { faBootstrap, faCss3, faDiscord, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
+import { faChevronRight, faCode, faFire } from '@fortawesome/free-solid-svg-icons';
+import { faCss3, faDiscord, faHtml5, faJsSquare, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
 
 // Images
 import manSitting from '../assets/man-sitting.svg';
 import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
 import groupBotSS from '../assets/GroupBotSS.png';
-import mindMazeSS from '../assets/MindMazeSS.png';
 import efficientDevSS from '../assets/EfficientDevSS.png';
+import PricingCard from '../common/PricingCard';
 import SubHeader from '../common/SubHeader';
 
-const skills = [
-    {
-        section: 'Front End',
-        items: [
-            {
-                name: 'HTML',
-                icon: faHtml5
-            },
-            {
-                name: 'CSS',
-                icon: faCss3
-            },
-            {
-                name: 'JavaScript',
-                icon: faJsSquare
-            },
-            {
-                name: 'TypeScript',
-                icon: faCode
-            },
-            {
-                name: 'ReactJS',
-                icon: faReact
-            },
-            {
-                name: 'Bootstrap',
-                icon: faBootstrap
-            },
-        ]
-    },
-    {
-        section: 'Other',
-        items: [
-            {
-                name: 'Java',
-                icon: faJava
-            },
-            {
-                name: 'Python',
-                icon: faPython
-            },
-            {
-                name: 'Git',
-                icon: faGit
-            },
-            {
-                name: 'GitHub',
-                icon: faGithub
-            },
-        ]
-    },
-    {
-        section: 'Back End',
-        items: [
-            {
-                name: 'NodeJS',
-                icon: faNodeJs
-            },
-            {
-                name: 'Express',
-                icon: faE
-            },
-            {
-                name: 'MongoDB',
-                icon: faDatabase
-            },
-            {
-                name: 'Firebase',
-                icon: faFire
-            }
-        ]
-    }
-];
-
-const Home = () => {
+const FreelanceHome = () => {
     const [selectedSkill, setSelectedSkill] = useState(0);
+
+    useEffect(() => {
+        document.title = "JWB | Web Development"
+    }, [])
 
     const handleSkillSelect = (index) => {
         setSelectedSkill(index);
@@ -104,19 +34,32 @@ const Home = () => {
         });
     }
 
+    const basicPackage = {
+        title: 'Basic Website',
+        description: 'A basic website with a few pages and a contact form - perfect for small businesses and individuals.',
+        price: 100,
+        features: [
+            'Up to 3 pages',
+            'Contact form',
+            'Responsive design',
+            'SEO',
+            '1 Year of free hosting',
+        ]
+    }
+
     return (
         <div className="web-container web-container-light">
-            <SubHeader />
+            <SubHeader freelance={true} />
             <div className="container container-light-bg padding-container" id="hero">
                 <h1 className="header text-dark hero__header">Jacob Bowlware</h1>
-                <h2 className="subheader text-med hero__subheader">Web Developer. CS Student. Basketball Enthusiast</h2>
+                <h2 className="subheader text-med hero__subheader">Freelance Web Developer</h2>
                 <div className="hero__links">
                     <div className="hero__links-item">
-                        <a href="/#skills" className="link hero__link">Skills</a>
+                        <a href="/freelance/#experience" className="link hero__link">Experience</a>
                         <FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} />
                     </div>
                     <div className="hero__links-item">
-                        <a href="/#projects" className="link hero__link">Projects</a>
+                        <a href="/freelance/#testimonials" className="link hero__link">Testimonials</a>
                         <FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} />
                     </div>
                 </div>
@@ -125,17 +68,14 @@ const Home = () => {
                 <div className="container-grid" id="about">
                     <div className="grid__item-container">
                         <div className="container-grid__item">
-                            <h2 className="subheader text-dark about__header">About Me</h2>
+                            <h2 className="subheader text-dark about__header">What I can Offer You</h2>
                             <p className="text-med about__text p-text">
-                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma.
-                                I have a strong passion for programming and am always looking
-                                for new opportunities to learn and grow professionally.
-                            </p>
-                            <p className="text-med about__text p-text">
-                                In my free time I enjoy reading, programming, and playing basketball. I am always
-                                up for a challenge and I love to learn new things - whether it's a new programming language,
-                                productivity hack, or basketball move.
-
+                                Hello, I am Jacob Bowlware, a freelance web developer. I specialize in building
+                                websites and web applications for small businesses and individuals. I will work with you
+                                to create a website that fits your needs and helps you reach your goals. <strong>
+                                    Better yet, I have a
+                                    100% money back guarantee. If you are not satisfied with my work, I will refund you in full.
+                                </strong>
                             </p>
                         </div>
                     </div>
@@ -146,32 +86,19 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="container container-dark-bg padding-container" id="skills">
+            <div className="container container-dark-bg padding-container" id="pricing">
                 <h3 className="subheader text-light skills-header">
-                    My Skills
+                    Website Packages
                 </h3>
-                <div className="skills-selection-container">
-                    <p className="skills-selection-container__item text-light skills-selection-container__item--active" onClick={() => handleSkillSelect(0)}>
-                        Front End
+                <div className="pricing-container">
+                    <div className="pricing-container-grid">
+                        <PricingCard bullets={["1 Page"]} title="Basic" price={69.99} description="A basic website with one page and a contact form - perfect for individuals." />
+                        <PricingCard bullets={["3 Pages"]} title="Standard" price={99.99} description="A standard website with up to 3 pages and a contact form - perfect for small businesses." />
+                        <PricingCard title="Premium" price={199.99} disabled={true} />
+                    </div>
+                    <p className="text-light pricing-container-helper">
+                        * All packages include a 100% money back guarantee - if you are not satisfied with my work.
                     </p>
-                    <p className="skills-selection-container__item text-light" onClick={() => handleSkillSelect(1)}>
-                        Other
-                    </p>
-                    <p className="skills-selection-container__item text-light" onClick={() => handleSkillSelect(2)}>
-                        Back End
-                    </p>
-                </div>
-                <div className="skills-item__container">
-                    {
-                        skills[selectedSkill].items.map((item, index) => {
-                            return (
-                                <div className="skills-item" key={index}>
-                                    <FontAwesomeIcon className="skills-item__icon" icon={item.icon} />
-                                    <p className="skills-item__text text-light">{item.name}</p>
-                                </div>
-                            );
-                        })
-                    }
                 </div>
             </div>
             <div className="container container-light-bg padding-container" id="projects">
@@ -218,4 +145,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default FreelanceHome;

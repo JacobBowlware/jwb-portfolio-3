@@ -6,6 +6,7 @@ import {
 
 // Pages
 import Home from './components/pages/Home';
+import FreelanceHome from './components/pages/FreelanceHome';
 
 // Components
 import Header from './components/common/Header';
@@ -15,14 +16,15 @@ import Footer from './components/common/Footer';
 // CSS
 import './components/css/App.css';
 import './components/css/Home.css';
+import './components/css/FreelanceHome.css';
 import './components/css/Header.css';
 import './components/css/Footer.css';
+import './components/css/PricingCard.css';
 
 function App() {
   const Root = () => {
     return <>
       <Header />
-      <SubHeader />
       <Outlet />
       <Footer />
     </>
@@ -33,6 +35,7 @@ function App() {
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
         <Route path="*" element={<Home />} />
+        <Route path="/freelance" element={<FreelanceHome />} />
       </Route >
     )
   )
