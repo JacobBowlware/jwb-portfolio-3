@@ -1,0 +1,78 @@
+/* Experience Item */
+.experience-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.experience-item-link {
+    display: block;
+}
+
+.experience-item-img {
+    max-width: 410px;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.experience-item-img.hovered {
+    cursor: pointer;
+}
+
+.experience-item-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s 0.3s;
+    font-weight: 700;
+}
+
+.experience-item:hover .experience-item-details {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.experience-item-details__header {
+    font-weight: 700;
+}
+
+.experience-item-details__p {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.experience-item-details__link {
+    font-size: 1.2rem;
+}
+
+.experience-item-details__link-icon {
+    font-size: 1rem;
+}
+
+.experience-item-details.show {
+    opacity: 1;
+}
+
+/* Responsive styles for medium screens and above (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    .experience-item__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        max-width: 1400px;
+        padding: 1rem;
+    }
+}

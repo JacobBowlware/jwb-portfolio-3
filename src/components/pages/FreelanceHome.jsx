@@ -1,51 +1,26 @@
 // React
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faCode, faFire } from '@fortawesome/free-solid-svg-icons';
-import { faCss3, faDiscord, faHtml5, faJsSquare, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 // Images
 import manSitting from '../assets/man-sitting.svg';
-import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
-import groupBotSS from '../assets/GroupBotSS.png';
+import LimitedBitsSS from '../assets/LimitedBitsSS.png';
+import JmPoolSS from '../assets/JmPoolSS.png';
 import efficientDevSS from '../assets/EfficientDevSS.png';
 import PricingCard from '../common/PricingCard';
 import SubHeader from '../common/SubHeader';
+import { Link } from 'react-router-dom';
+import ExperienceItem from '../common/ExperienceItem';
 
 const FreelanceHome = () => {
-    const [selectedSkill, setSelectedSkill] = useState(0);
 
     useEffect(() => {
         document.title = "JWB | Web Development"
     }, [])
-
-    const handleSkillSelect = (index) => {
-        setSelectedSkill(index);
-        const skillsSelection = document.querySelectorAll('.skills-selection-container__item');
-        skillsSelection.forEach((item, i) => {
-            if (i === index) {
-                item.classList.add('skills-selection-container__item--active');
-            } else {
-                item.classList.remove('skills-selection-container__item--active');
-            }
-        });
-    }
-
-    const basicPackage = {
-        title: 'Basic Website',
-        description: 'A basic website with a few pages and a contact form - perfect for small businesses and individuals.',
-        price: 100,
-        features: [
-            'Up to 3 pages',
-            'Contact form',
-            'Responsive design',
-            'SEO',
-            '1 Year of free hosting',
-        ]
-    }
 
     return (
         <div className="web-container web-container-light">
@@ -101,44 +76,15 @@ const FreelanceHome = () => {
                     </p>
                 </div>
             </div>
-            <div className="container container-light-bg padding-container" id="projects">
+            <div className="container container-light-bg padding-container" id="experience">
                 <h3 className="subheader text-dark projects-header">
-                    My Projects
+                    Experience
                 </h3>
-                <div className="projects-item__container">
-                    <ProjectItem
-                        title="LovelyIcon" body="LovelyIcon is a web application 
-                        that allows users to create an account, purchase credits, and 
-                        effortlessly generate icons. The icons are generated using the 
-                        OpenAI text-to-image API, and are then stored in a Firebase storage 
-                        bucket. The payment system is handled with the Stripe API and custom 
-                        cloud functions."
-                        icons={[faHtml5, faCss3, faJsSquare, faReact, faFire, faStripe]}
-                        image={lovelyIconSS}
-                        liveLink="https://lovelyicon.com"
-                        repoLink="https://github.com/JacobBowlware/LovelyIcon"
-                    />
-                    <ProjectItem
-                        title="EfficientDev" body="EfficientDev is  my own personal blog website 
-                        where I post about different topics in programming and productivity management. This project 
-                        was a great opportunity for me to learn more about TypeScript, while also getting the chance to
-                        to create blog posts about topics that I am passionate about."
-                        icons={[faHtml5, faCss3, faJsSquare, faCode, faReact]}
-                        image={efficientDevSS}
-                        liveLink="https://efficient-dev.web.app/"
-                        repoLink="https://github.com/JacobBowlware/EfficientDev"
-                    />
-                    <ProjectItem
-                        title="GroupBot" body="Created during Hacklahoma of 2023, Group Bot 
-                        is a Discord bot that allows users to seemlessly create and manage sub-groups 
-                        within a Discord server. During this project, I gained valuable insights 
-                        into the Discord developer API and the process of developing user-friendly 
-                        API's, while also getting the chance to sharpen my front-end skills."
-                        icons={[faHtml5, faCss3, faJsSquare, faReact, faDiscord]}
-                        image={groupBotSS}
-                        liveLink="https://group-bot-a78f2.web.app/"
-                        repoLink="https://github.com/JacobBowlware/groupbot"
-                    />
+                <div className="experience-item__container">
+                    <ExperienceItem img={LimitedBitsSS} link="https://lovelyicon.com/" title="LimitedBits" completedDate="August 2023" />
+                    <ExperienceItem img={lovelyIconSS} link="https://lovelyicon.com/" title="LovelyIcon" completedDate="May 2023" />
+                    <ExperienceItem img={JmPoolSS} link="https://lovelyicon.com/" title="J&M Pool Installation & Repair" completedDate="April 2023" />
+                    <ExperienceItem img={efficientDevSS} link="https://efficient-dev.web.app/" title="EfficientDev" completedDate="July 2023" />
                 </div>
             </div>
         </div>
