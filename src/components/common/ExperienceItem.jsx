@@ -21,9 +21,9 @@ const ExperienceItem = ({ link, img, title, completedDate }) => {
             <div className={`experience-item-details ${isHovered ? 'show' : ''}`}>
                 <h3 className="experience-item-details__header">{title}</h3>
                 <p className="experience-item-details__p"> {completedDate}</p>
-                <a className="link experience-item-details__link" href={link} target="_blank" rel="noreferrer">
+                {link && <a className="link experience-item-details__link" href={link} target="_blank" rel="noreferrer">
                     View Live <FontAwesomeIcon className="hero__icon-link" icon={faChevronRight} />
-                </a>
+                </a>}
             </div>
         </div>
     );

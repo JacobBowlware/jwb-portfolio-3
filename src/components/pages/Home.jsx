@@ -15,6 +15,9 @@ import mindMazeSS from '../assets/MindMazeSS.png';
 import efficientDevSS from '../assets/EfficientDevSS.png';
 import SubHeader from '../common/SubHeader';
 
+// Components
+import Header from '../common/Header';
+
 const skills = [
     {
         section: 'Front End',
@@ -106,6 +109,7 @@ const Home = () => {
 
     return (
         <div className="web-container web-container-light">
+            <Header />
             <SubHeader />
             <div className="container container-light-bg padding-container" id="hero">
                 <h1 className="header text-dark hero__header">Jacob Bowlware</h1>

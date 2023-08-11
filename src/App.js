@@ -9,8 +9,6 @@ import Home from './components/pages/Home';
 import FreelanceHome from './components/pages/FreelanceHome';
 
 // Components
-import Header from './components/common/Header';
-import SubHeader from './components/common/SubHeader';
 import Footer from './components/common/Footer';
 
 // CSS
@@ -25,7 +23,6 @@ import './components/css/ExperienceItem.css';
 function App() {
   const Root = () => {
     return <>
-      <Header />
       <Outlet />
       <Footer />
     </>

@@ -167,13 +167,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .subheader {
-    font-size: 48px;
-  }
-
-}
-
 /* Links */
 .link {
   color: #06c !important;
@@ -181,6 +174,7 @@ body {
 
 #about,
 #pricing,
+#testimonials,
 #skills,
 #projects,
 #contact,

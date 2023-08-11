@@ -1,20 +1,30 @@
 /* Experience Item */
+.experience-item__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .experience-item {
     position: relative;
     display: inline-block;
-    margin: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* margin: 10px; */
     overflow: hidden;
 }
 
 .experience-item-link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .experience-item-img {
     max-width: 410px;
-    object-fit: cover;
     transition: all 0.3s;
+    object-fit: contain !important;
+
 }
 
 .experience-item-img.hovered {
@@ -46,6 +56,7 @@
 
 .experience-item-details__header {
     font-weight: 700;
+    text-align: center;
 }
 
 .experience-item-details__p {
@@ -67,12 +78,14 @@
 }
 
 /* Responsive styles for medium screens and above (min-width: 768px) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
     .experience-item__container {
-        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .experience-item__container {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        max-width: 1400px;
-        padding: 1rem;
     }
 }
