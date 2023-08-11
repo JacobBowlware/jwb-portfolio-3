@@ -17,9 +17,16 @@ import PricingCard from '../common/PricingCard';
 import SubHeader from '../common/SubHeader';
 import ExperienceItem from '../common/ExperienceItem';
 import FreelanceHeader from '../common/FreelanceHeader';
+import TestimonialItem from '../common/TestimonialItem';
 
+
+/* TODO:
+- Create Testimonials component and implement it.
+- Change font sizing for mobile/desktop views.
+- Add a contact section at the bottom of the page.
+- Setup the contact form to send emails to my email address.
+*/
 const FreelanceHome = () => {
-
     useEffect(() => {
         document.title = "JWB | Web Development"
     }, [])
@@ -86,8 +93,13 @@ const FreelanceHome = () => {
                     See what my clients have to say about me and my work.
                 </p>
                 <div className="experience-item__container">
-
+                    <TestimonialItem body="Jacob is a great web developer. He is very professional and easy to work with. I would recommend him to anyone looking for a website." name="John Doe" />
+                    <TestimonialItem body="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere maiores eaque officiis laudantium velit possimus... " name="John Doe" />
+                    <TestimonialItem body="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere maiores eaque officiis laudantium velit possimus... " name="John Doe" />
                 </div>
+                <p className="text-dark pricing-container-helper mt-0">
+                    Have you worked with me before? <a href="/freelance/#contact" className="link">Leave a testimonial<FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} /></a>
+                </p>
             </div>
             <div className="container container-dark-bg padding-container" id="pricing">
                 <h3 className="subheader text-light skills-header">

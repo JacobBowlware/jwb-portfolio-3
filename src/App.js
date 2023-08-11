@@ -19,6 +19,7 @@ import './components/css/Header.css';
 import './components/css/Footer.css';
 import './components/css/PricingCard.css';
 import './components/css/ExperienceItem.css';
+import './components/css/TestimonialItem.css';
 
 function App() {
   const Root = () => {

@@ -11,7 +11,7 @@ import manSitting from '../assets/man-sitting.svg';
 import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
 import groupBotSS from '../assets/GroupBotSS.png';
-import mindMazeSS from '../assets/MindMazeSS.png';
+import LimitedBitsSS from '../assets/LimitedBitsSS.png';
 import efficientDevSS from '../assets/EfficientDevSS.png';
 import SubHeader from '../common/SubHeader';
 
@@ -196,6 +196,17 @@ const Home = () => {
                         repoLink="https://github.com/JacobBowlware/LovelyIcon"
                     />
                     <ProjectItem
+                        title="LimitedBits" body="LimitedBits is a social media web application, with a twist; users 
+                        can only make 1 post per week. This project in particular was a great opportunity for me to learn 
+                        more about backend development, as I was able successfully implement a Node.js backend with a MongoDB database 
+                        and Express.js server. I also learned a lot about authentication and security, as I used JWT tokens and 
+                        bcrypt to authenticate users and protect their data."
+                        icons={[faHtml5, faCss3, faJsSquare, faReact, faDatabase, faNodeJs]}
+                        image={LimitedBitsSS}
+                        liveLink="https://group-bot-a78f2.web.app/"
+                        repoLink="https://github.com/JacobBowlware/LimitedBits"
+                    />
+                    <ProjectItem
                         title="EfficientDev" body="EfficientDev is  my own personal blog website 
                         where I post about different topics in programming and productivity management. This project 
                         was a great opportunity for me to learn more about TypeScript, while also getting the chance to
@@ -204,17 +215,6 @@ const Home = () => {
                         image={efficientDevSS}
                         liveLink="https://efficient-dev.web.app/"
                         repoLink="https://github.com/JacobBowlware/EfficientDev"
-                    />
-                    <ProjectItem
-                        title="GroupBot" body="Created during Hacklahoma of 2023, Group Bot 
-                        is a Discord bot that allows users to seemlessly create and manage sub-groups 
-                        within a Discord server. During this project, I gained valuable insights 
-                        into the Discord developer API and the process of developing user-friendly 
-                        API's, while also getting the chance to sharpen my front-end skills."
-                        icons={[faHtml5, faCss3, faJsSquare, faReact, faDiscord]}
-                        image={groupBotSS}
-                        liveLink="https://group-bot-a78f2.web.app/"
-                        repoLink="https://github.com/JacobBowlware/groupbot"
                     />
                 </div>
             </div>

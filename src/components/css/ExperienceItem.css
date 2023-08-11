@@ -1,9 +1,10 @@
 /* Experience Item */
 .experience-item__container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
+    max-width: 1400px;
 }
 
 .experience-item {
@@ -21,10 +22,9 @@
 }
 
 .experience-item-img {
-    max-width: 410px;
     transition: all 0.3s;
     object-fit: contain !important;
-
+    width: 100%;
 }
 
 .experience-item-img.hovered {
@@ -75,13 +75,6 @@
 
 .experience-item-details.show {
     opacity: 1;
-}
-
-/* Responsive styles for medium screens and above (min-width: 768px) */
-@media screen and (min-width: 860px) {
-    .experience-item__container {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media screen and (min-width: 1240px) {
