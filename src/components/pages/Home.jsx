@@ -10,7 +10,6 @@ import { faBootstrap, faCss3, faDiscord, faGit, faGithub, faHtml5, faJava, faJsS
 import manSitting from '../assets/man-sitting.svg';
 import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
-import groupBotSS from '../assets/GroupBotSS.png';
 import LimitedBitsSS from '../assets/LimitedBitsSS.png';
 import efficientDevSS from '../assets/EfficientDevSS.png';
 import SubHeader from '../common/SubHeader';

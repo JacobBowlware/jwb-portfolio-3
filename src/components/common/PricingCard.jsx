@@ -10,7 +10,7 @@ const PricingCard = ({ title, price, description, link, disabled, bullets }) => 
     if (disabled) {
         return (
             <div className="pricing-card pricing-card--highlight">
-                <h3 className="pricing-card__title text-light">{title} - ${price}</h3>
+                <h3 className="pricing-card__title text-dark">{title} - ${price}</h3>
                 <div className="pricing-card__disabled-container">
                     <FontAwesomeIcon icon={faClockFour} className="pricing-card__disabled-icon" />
                 </div>
@@ -21,7 +21,7 @@ const PricingCard = ({ title, price, description, link, disabled, bullets }) => 
     return (
         <div className="pricing-card">
             <div className="pricing-card-text">
-                <h3 className="pricing-card__title text-light">{title} - ${price}</h3>
+                <h3 className="pricing-card__title text-dark">{title} - ${price}</h3>
                 <p className="pricing-card__description">{description}</p>
             </div>
             <div className="pricing-card-body">

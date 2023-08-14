@@ -21,7 +21,7 @@ import TestimonialItem from '../common/TestimonialItem';
 
 
 /* TODO:
-- Create Testimonials component and implement it.
+- Create Testimonials component and implement it - DONE.
 - Change font sizing for mobile/desktop views.
 - Add a contact section at the bottom of the page.
 - Setup the contact form to send emails to my email address.
@@ -98,11 +98,11 @@ const FreelanceHome = () => {
                     <TestimonialItem body="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere maiores eaque officiis laudantium velit possimus... " name="John Doe" />
                 </div>
                 <p className="text-dark pricing-container-helper mt-0">
-                    Have you worked with me before? <a href="/freelance/#contact" className="link">Leave a testimonial<FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} /></a>
+                    Have you worked with me before? <a href="mailto:Jacobbowlware@gmail.com?subject=Testimonial" className="link">Leave a testimonial<FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} /></a>
                 </p>
             </div>
-            <div className="container container-dark-bg padding-container" id="pricing">
-                <h3 className="subheader text-light skills-header">
+            <div className="container container-med-bg padding-container" id="pricing">
+                <h3 className="subheader text-dark skills-header">
                     Website Packages
                 </h3>
                 <div className="pricing-container">

@@ -96,6 +96,10 @@ body {
   background: var(--var-background-dark);
 }
 
+.container-med-bg {
+  background: var(--var-background-med);
+}
+
 .no-shadow {
   box-shadow: none !important;
 }

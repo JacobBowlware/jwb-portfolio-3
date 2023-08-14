@@ -29,7 +29,7 @@ const FreelanceHeader = () => {
                         <a className="nav-item nav-link" href="/freelance/#portfolio">Portfolio</a>
                         <a className="nav-item nav-link" href="/freelance/#testimonials">Testimonials</a>
                         <a className="nav-item nav-link" href="/freelance/#pricing">Pricing</a>
-                        <a className="nav-item nav-link" href="/freelance/#contact">Contact</a>
+                        <a className="nav-item nav-link" href="mailto:Jacobbowlware@gmail.com">Contact</a>
                         <a className="nav-item nav-link nav-icon" href="mailto:Jacobbowlware@gmail.com">
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>

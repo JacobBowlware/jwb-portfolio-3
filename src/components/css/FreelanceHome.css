@@ -20,20 +20,24 @@
 .pricing-container-helper {
     margin-top: 1.1rem;
     text-align: center;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
     .pricing-container-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .pricing-container-helper {
+        font-size: 1.1rem;
+    }
 }
 
 /* Portfolio */
 .portfolio-helper {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
-    width: 70%;
 }
 
 @media screen and (min-width: 768px) {
