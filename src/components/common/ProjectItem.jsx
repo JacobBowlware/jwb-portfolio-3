@@ -1,11 +1,19 @@
 // React
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectItem = ({ title, body, icons, liveLink, repoLink, image }) => {
+    const [liveLinkClasses, setLiveLinkClasses] = useState("hero__links-item");
+
+    useEffect(() => {
+        if (liveLink === "") {
+            setLiveLinkClasses(["hero__links-item hero__link--disabled"]);
+        }
+    }, [liveLink])
+
     return (
         <div className="container-grid__item project-item">
             <div className="container-grid project-grid">
@@ -24,8 +32,8 @@ const ProjectItem = ({ title, body, icons, liveLink, repoLink, image }) => {
                         }
                     </div>
                     <div className="projects-item__links">
-                        <div className="hero__links-item">
-                            <a href={liveLink} className="link hero__link" target="_blank" rel="noreferrer">View Live</a>
+                        <div className={liveLinkClasses}>
+                            <a href={liveLink} className={liveLink === "" ? "hero__link hero__link--disabled" : "hero__link"} target="_blank" rel="noreferrer">View Live</a>
                             <FontAwesomeIcon className="hero__icon-link link" icon={faChevronRight} />
                         </div>
                         <div className="hero__links-item">

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faCode, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
-import { faBootstrap, faCss3, faDiscord, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
 
 // Images
 import manSitting from '../assets/man-sitting.svg';
@@ -202,7 +202,7 @@ const Home = () => {
                         bcrypt to authenticate users and protect their data."
                         icons={[faHtml5, faCss3, faJsSquare, faReact, faDatabase, faNodeJs]}
                         image={LimitedBitsSS}
-                        liveLink="https://group-bot-a78f2.web.app/"
+                        liveLink=""
                         repoLink="https://github.com/JacobBowlware/LimitedBits"
                     />
                     <ProjectItem
