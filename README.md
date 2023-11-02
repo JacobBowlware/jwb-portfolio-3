@@ -1,11 +1,3 @@
-# JWB Portfolio
-
-## Built With
-- HTML/CSS
-- Javascript
-- ReactJS
-- Firebase
-
 # JWB Portfolio Website
 
 ### Technology Stack:
