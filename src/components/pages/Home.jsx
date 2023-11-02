@@ -130,7 +130,7 @@ const Home = () => {
                         <div className="container-grid__item">
                             <h2 className="subheader text-dark about__header">About Me</h2>
                             <p className="text-med about__text p-text">
-                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma.
+                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma, with a minor in Mathematics.
                                 I have a strong passion for programming and am always looking
                                 for new opportunities to learn and grow professionally.
                             </p>
