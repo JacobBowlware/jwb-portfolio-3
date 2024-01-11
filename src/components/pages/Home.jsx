@@ -11,7 +11,7 @@ import manSitting from '../assets/man-sitting.svg';
 import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
 import LimitedBitsSS from '../assets/LimitedBitsSS.png';
-import efficientDevSS from '../assets/EfficientDevSS.png';
+import SponsorTrailSS from '../assets/SponsorTrailSS.png';
 import SubHeader from '../common/SubHeader';
 
 // Components
@@ -185,7 +185,7 @@ const Home = () => {
                     <ProjectItem
                         title="LovelyIcon" body="LovelyIcon is a web application 
                         that allows users to create an account, purchase credits, and 
-                        effortlessly generate icons. The icons are generated using the 
+                        generate icons with an easy to use UI. The icons are generated using the 
                         OpenAI text-to-image API, and are then stored in a Firebase storage 
                         bucket. The payment system is handled with the Stripe API and custom 
                         cloud functions."
@@ -195,25 +195,13 @@ const Home = () => {
                         repoLink="https://github.com/JacobBowlware/LovelyIcon"
                     />
                     <ProjectItem
-                        title="LimitedBits" body="LimitedBits is a social media web application, with a twist; users 
-                        can only make 1 post per week. This project in particular was a great opportunity for me to learn 
-                        more about backend development, as I was able successfully implement a Node.js backend with a MongoDB database 
-                        and Express.js server. I also learned a lot about authentication and security, as I used JWT tokens and 
-                        bcrypt to authenticate users and protect their data."
-                        icons={[faHtml5, faCss3, faJsSquare, faReact, faDatabase, faNodeJs]}
-                        image={LimitedBitsSS}
-                        liveLink=""
-                        repoLink="https://github.com/JacobBowlware/LimitedBits"
-                    />
-                    <ProjectItem
-                        title="EfficientDev" body="EfficientDev is  my own personal blog website 
-                        where I post about different topics in programming and productivity management. This project 
-                        was a great opportunity for me to learn more about TypeScript, while also getting the chance to
-                        to create blog posts about topics that I am passionate about."
-                        icons={[faHtml5, faCss3, faJsSquare, faCode, faReact]}
-                        image={efficientDevSS}
-                        liveLink="https://efficient-dev.web.app/"
-                        repoLink="https://github.com/JacobBowlware/EfficientDev"
+                        title="Sponsor Trail" body="Sponsor Trail is a web application designed to streamline the 
+                        process of discovering podcast sponsors -providing regular updates on new and relevant sponsorships to podcast hosts. Sponsorship info 
+                        is scraped from the web and stored in a MongoDB database, where users can then access it depending on their subscription level."
+                        icons={[faHtml5, faCss3, faJsSquare, faReact, faDatabase, faNodeJs, faPython]}
+                        image={SponsorTrailSS}
+                        liveLink="https://sponsor-trail.web.app/"
+                        repoLink="https://github.com/JacobBowlware/SponsorTrail"
                     />
                 </div>
             </div>
