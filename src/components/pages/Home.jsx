@@ -10,7 +10,6 @@ import { faBootstrap, faCss3, faGit, faGithub, faHtml5, faJava, faJsSquare, faNo
 import manSitting from '../assets/man-sitting.svg';
 import ProjectItem from '../common/ProjectItem';
 import lovelyIconSS from '../assets/LovelyIconSS.png';
-import LimitedBitsSS from '../assets/LimitedBitsSS.png';
 import SponsorTrailSS from '../assets/SponsorTrailSS.png';
 import SubHeader from '../common/SubHeader';
 
@@ -125,21 +124,21 @@ const Home = () => {
                 </div>
             </div>
             <div className="container container-light-bg container-grid__item">
-                <div className="container-grid" id="about">
-                    <div className="grid__item-container">
-                        <div className="container-grid__item">
-                            <h2 className="subheader text-dark about__header">About Me</h2>
-                            <p className="text-med about__text p-text">
-                                Hi, my name is Jacob and I am a Computer Science student at the University of Oklahoma, with a minor in Mathematics.
-                                I have a strong passion for programming and am always looking
-                                for new opportunities to learn and grow professionally.
-                            </p>
-                            <p className="text-med about__text p-text">
-                                In my free time I enjoy reading, programming, and playing basketball. I am always
-                                up for a challenge and I love to learn new things - whether it's a new programming language,
-                                productivity hack, or basketball move.
-
-                            </p>
+                <div className="container-grid p-2" id="about">
+                    <div className='container-item-center-cont'>
+                        <div className="grid__item-container w-80">
+                            <div className="container-grid__item">
+                                <h2 className="subheader text-dark about__header">About</h2>
+                                <p className="text-med about__text p-text">
+                                    I am Jacob, a Computer Science student at the University of Oklahoma, with a minor in Mathematics.
+                                    I have a strong passion for programming and am always looking
+                                    for new opportunities to learn and grow professionally.
+                                </p>
+                                <p className="text-med about__text p-text">
+                                    In my free time I enjoy reading, hanging out with friends, and playing basketball. Learning
+                                    is at the center of my life, and I am always looking for new ways to expand my knowledge.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className="grid__item-container">

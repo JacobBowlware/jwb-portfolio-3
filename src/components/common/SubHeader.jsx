@@ -23,7 +23,7 @@ const SubHeader = ({ freelance }) => {
         <div className="web-container web-container__med subheader-container">
             <h1 className="text-med subheader text-med nav-subheader">
                 Passionate Web Developer and Aspiring Intern Seeking Exciting
-                Opportunities. <a className="link" href="mailto:jacobbowlware@gmail.com?subject=Regarding%20Job%20Opportunity"> Hire Me</a> <FontAwesomeIcon
+                Opportunities. <a className="link" href="mailto:jacobbowlware@gmail.com?subject=Regarding%20Job%20Opportunity"> Contact Me</a> <FontAwesomeIcon
                     className="link nav-subheader__icon" icon={faChevronRight} />
             </h1>
         </div>

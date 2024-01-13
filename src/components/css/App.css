@@ -100,6 +100,14 @@ body {
   background: var(--var-background-med);
 }
 
+.container-item-center-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .no-shadow {
   box-shadow: none !important;
 }
@@ -108,9 +116,20 @@ body {
   max-width: 700px;
 }
 
+.w-80 {
+  width: 80%;
+}
+
 @media screen and (min-width: 768px) {
   .container-grid {
     grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  .container-grid {
+    max-width: 1100px;
   }
 }
 
