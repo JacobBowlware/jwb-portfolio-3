@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faCode, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
+import { faC, faChevronRight, faCode, faDatabase, faE, faFire } from '@fortawesome/free-solid-svg-icons';
 import { faBootstrap, faCss3, faGit, faGithub, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact, faStripe } from '@fortawesome/free-brands-svg-icons';
 
 // Images
@@ -56,6 +56,10 @@ const skills = [
             {
                 name: 'Python',
                 icon: faPython
+            },
+            {
+                name: 'C++',
+                icon: faC
             },
             {
                 name: 'Git',
